@@ -205,23 +205,7 @@ if __name__ == "__main__":
             csv_writer(tvt, tp, (tpr_ave, tpr_std, tpr_net_ave, tpr_net_std, fpr_net_ave, fpr_net_std, acc_net_ave, acc_net_std))
 
 
-#r
-"""
-# csv_test["pn"] == "positive" を追加
-idx_r_0_5 = np.array(csv_test['r'] <= 5)
-idx_r_5_10 = np.array((csv_test['r'] > 5) & (csv_test['r'] <= 10))
-idx_r_10_15 = np.array((csv_test['r'] > 10) & (csv_test['r'] <= 15))
-idx_r_15_20 = np.array((csv_test['r'] > 15) & (csv_test['r'] <= 20))
 
-y_r_0_5, y_preds0_r_0_5 = y_[idx_r_0_5], y_preds0_[idx_r_0_5]
-y_r_5_10, y_preds0_r_5_10 = y_[idx_r_5_10], y_preds0_[idx_r_5_10]
-y_r_10_15, y_preds0_r_10_15 = y_[idx_r_10_15], y_preds0_[idx_r_10_15]
-y_r_15_20, y_preds0_r_15_20 = y_[idx_r_15_20], y_preds0_[idx_r_15_20]
-
-range_r= ["0_5", "5_10", "10_15", "15_20"]
-y_r = [y_r_0_5, y_r_5_10, y_r_10_15, y_r_15_20]
-y_preds0_r = [y_preds0_r_0_5, y_preds0_r_5_10, y_preds0_r_10_15, y_preds0_r_15_20]
-"""
 
 """
 # ul_mg and r 明るさと距離の組み合わせ
